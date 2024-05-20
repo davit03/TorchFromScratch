@@ -253,6 +253,3 @@ act_func_linear = [Tensor.sigmoid]
 hidden_size = [16]
 model_linear = LinearRegression(act_func_linear, X_diabetes_train.value.shape[1], hidden_size)
 train(model_linear, mse, X_diabetes_train, y_diabetes_train, learning_rate=0.0001, epochs=500)
-"""
-For logistic regression same but with the loss that is defined in "bce" function
-"""
